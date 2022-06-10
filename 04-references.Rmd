@@ -1,0 +1,9 @@
+# Links {-}
+
+[Matrix Algebra](https://www.khanacademy.org/math/algebra-home/alg-matrices)
+
+[Spotify Dataset](https://www.kaggle.com/datasets/mrmorj/dataset-of-songs-in-spotify)
+
+[Eucledian Distance](https://www.robots.ox.ac.uk/~albanie/notes/Euclidean_distance_trick.pdf)
+
+[Single Linkage](https://www.analyticsvidhya.com/blog/2021/06/single-link-hierarchical-clustering-clearly-explained/)

@@ -1,0 +1,52 @@
+# Approach 
+
+This chapter focuses on a building block that allows for larger computations within cluster analysis to be more efficient. 
+
+## Matrix Algebra
+
+Before we start exploring the algorithmic approach you can use to achieve cluster analysis we need to be able to understand how to work with the data. Working with large data can become tedious but through the use of matrix algebra we can make computations more efficient. So this section we will run through some of the basic concepts of linear algebra that will allows us to do this.
+
+### What is a matrix {-}
+
+We can transform our data into matrices, which are rectangular arrays of numbers or variables arranged in *n* rows and *p* columns. 
+
+$$ 
+A = \begin{pmatrix}
+      a_{11} & a_{12} & ... & a_{1p} \\
+      a_{21} & a_{22} & ... & a_{2p} \\
+      .      & .      &     &   .     \\
+      .      & .      &     &   .     \\
+      .      & .      &     &   .     \\
+      a_{n1} & a_{n2} & ... & a_{np} 
+      \end{pmatrix}
+$$
+We would then say our *A* matrix has *n*x*p* **dimension**. You can start to see how this can be useful as the number of columns would denote the number of variables we have and the number of rows would denote the number of observations or number of rows we have. 
+
+### Transpose of Matrix{-}
+
+The next important concept of matrices is the transpose of a matrix sometimes denoted $A^T$ or $A^{'}$, these two representations are interchangeable and both denote the same idea. Transposing a matrix is changing the rows and columns of the matrix, so rows would become the columns and columns would become the rows, therefore changing the dimension to *p*x*n*. These two concepts are one of the driving factors for what makes large data computation more efficient.  
+
+### Identity Matrix {-}
+
+There is much more you can go into with matrix algebra, as there are courses taught just on matrix algebra in linear algebra. However, there is one more idea that is important which is the identity matrix, denoted as **I**. The identity matrix is a matrix which ones along the main diagonal, i.e.
+
+$$
+I = \begin{pmatrix}
+    1 & 0 & 0 \\
+    0 & 1 & 0\\
+    0 & 0 & 1 
+    \end{pmatrix}
+$$
+Our identity matrix example here is only a 3x3 but you can see how the matrix works if you extended the dimensions. Now we have these basic ideas of what matrices are here are couples that will be important for us. 
+
+* The dimensions of both matrices must be the same in order to compute matrix addition or subtraction.  
+* In order to perform matrix multiplication the number of columns of the first matrix must equal the number of columns to the second matrix.  
+* An inverse of a matrix only exist for a square matrix, denoted $A^{-1}$, if the inverse of the matrix exist the following property holds A$A^{-1}$ = **I**.  
+
+Now this was a very vague overview of matrix algebra, but knowing these ideas are very important. The link below goes into better explanation of these ideas and computations.
+
+[Matrix Alegbra Explanations](https://www.khanacademy.org/math/algebra-home/alg-matrices)
+
+## Methods 
+
+Moving forward, there are many approaches to achieving cluster analysis. There is hierarchical methods and non-hierarchical methods, both that center around the idea of unsupervised learning. The one we will be focusing on is hierarchical clustering, but non-hierarchical methods can still be applied. These two approaches are subjective and there is no clear cut answer in which one should be used or not. 

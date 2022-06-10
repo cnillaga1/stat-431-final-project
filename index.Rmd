@@ -1,0 +1,35 @@
+--- 
+title: |
+  <center>
+  ![](logo.jpg){width=3in}  
+  Cluster Analysis on Spotify Data
+  <center>
+author: 
+- Cesar Nillaga
+- Milo Weller
+- Sophie Moore
+date: '`r Sys.Date()`'
+site: bookdown::bookdown_site
+documentclass: book
+bibliography:
+- book.bib
+- packages.bib
+description: |
+  This tutorial investigates the methods of hieararchial clustering. We investigated the usage    of heirarchial clustering and how it could be applied to targeting groups using the spotify     data.
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+# About
+
+This tutorial will investigate what *cluster analysis* is and how it can be used to identify or predict groups with data. Our group focused on spotify data and we tried to group genres based on song characteristics. Later in this tutorial we will be using a dataset containing 15 different genres and through analysis we will see if we group similar genres together.
+
+## Background  
+
+Cluster analysis is a technique in which seeks to organize information about variables to form relatively similar groups or **clusters**. This technique can be applied to be a variety of areas one in which we will focus on later in the tutorial, but the overall process is used in what is called machine learning.  
+
+Since we live in world that revolves around the user, there is a large amount of data that must be gathered for this convenience. With this massive amount of data there is a human computation limit so we must rely on AI, Artificial Intelligence. With the use of AI we can develop algorithms to do these computations for us, in return we are able to better understand the large data we are working with.  
+
+## Usage
+
+Through the use of cluster analysis, companies are able to understand the target population. Take for example Amazon, one of the most prolific mass shipping company in world today. With the click of a button we can have whatever it is we need shipped to our doorstep within the same day. This is convenient for the user, but what goes on behind is where cluster analysis can play a huge role. With the use of cluster analysis Amazon can use the populations data to target certain groups to increase their revenue. This can be seen through their ad targeting, on the user interface, whenever they make a purchase they will see similar items that other people have bought. This is idea! This can be seen through any large organization, they are trying to put their population into clusters, in return they will save themselves money and time to gain those resources back.  
